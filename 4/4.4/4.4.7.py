@@ -16,3 +16,7 @@ elif a == 3:
     print(6)
 else:
     print(4)
+
+from math import factorial
+for n in range(1, 30):
+    print(factorial(n))
