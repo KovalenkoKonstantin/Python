@@ -8,9 +8,9 @@
 #
 # Считать, что сейчас 2023 год
 # (даже если ты проходишь этот курс в далеком будущем):
-from datetime import datetime
+import datetime
 
-# current = datetime.now()
+current = datetime.now()
 # print(current.day)
 # a = 2007
 a = int(input())
