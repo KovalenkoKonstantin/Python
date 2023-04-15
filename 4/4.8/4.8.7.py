@@ -10,7 +10,29 @@
 # нумерация начинается из левого верхнего угла
 # вначале вводится вертикальная составляющая координаты,
 # потом горизонтальная
-a = 1
-b = 1
-c = 2
-d = 2
+import random
+
+a = random.randint(1, 8)
+b = random.randint(1, 8)
+c = random.randint(1, 8)
+d = random.randint(1, 8)
+print(a)
+print(b)
+print(c)
+print(d)
+a = 3
+b = 3
+c = 4
+d = 4
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+if abs(a - c) < 2 and abs(b - d) < 2:
+    print("YES")
+else:
+    print("NO")
+
+a, b, c, d = (int(input()) for x in '1234')
+print("YES" if abs(a - c) < 2
+               and abs(b - d) < 2 else "NO")
