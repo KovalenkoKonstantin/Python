@@ -30,6 +30,12 @@ d = int(input())
 # print(b)
 # print(c)
 # print(d)
+
+if (a > c and b > d and a - c == b - d) or (c > a and d > b and c - a == d - b) or (a > c and d > b and a - c == d - b) or (c > a and b > d and c - a == b - d):
+    print("YES")
+else:
+    print("NO")
+
 if a > c and b > d and a - c == b - d:
         print("YES")
 elif c > a and d > b and c - a == d - b:

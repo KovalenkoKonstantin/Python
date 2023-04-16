@@ -27,22 +27,28 @@ a = int(input())
 b = int(input())
 c = int(input())
 d = int(input())
-if a == c or b == d:
-    print("YES")
-elif a > c and b > d and a - c == b - d:
-    print("YES")
-elif c > a and d > b and c - a == d - b:
-    print("YES")
-elif a > c and d > b and a - c == d - b:
-    print("YES")
-elif c > a and b > d and c - a == b - d:
+
+if (a == c or b == d) or (a > c and b > d and a - c == b - d) or (c > a and d > b and c - a == d - b) or (a > c and d > b and a - c == d - b) or (c > a and b > d and c - a == b - d):
     print("YES")
 else:
     print("NO")
 
-x1, y1 = int(input()), int(input())
-x2, y2 = int(input()), int(input())
-if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
-    print("YES")
-else:
-    print("NO")
+# if a == c or b == d:
+#     print("YES")
+# elif a > c and b > d and a - c == b - d:
+#     print("YES")
+# elif c > a and d > b and c - a == d - b:
+#     print("YES")
+# elif a > c and d > b and a - c == d - b:
+#     print("YES")
+# elif c > a and b > d and c - a == b - d:
+#     print("YES")
+# else:
+#     print("NO")
+
+# x1, y1 = int(input()), int(input())
+# x2, y2 = int(input()), int(input())
+# if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
+#     print("YES")
+# else:
+#     print("NO")
