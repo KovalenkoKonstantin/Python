@@ -52,7 +52,8 @@ print(x)
 if (
         (x == 'ладья' and (a == c or b == d))  # ладья
         or (x == 'конь' and ((abs(a - c) == 1 and abs(b - d) == 2) or (abs(a - c) == 2 and abs(b - d) == 1)))  # конь
-        or (x == 'слон' and ((a > c and b > d and a - c == b - d) or (c > a and d > b and c - a == d - b) or (a > c and d > b and a - c == d - b) or (c > a and b > d and c - a == b - d)))  # слон
+        or (x == 'слон' and ((a > c and b > d and a - c == b - d) or (c > a and d > b and c - a == d - b) or (
+        a > c and d > b and a - c == d - b) or (c > a and b > d and c - a == b - d)))  # слон
         or (x == 'ферзь' and (
         (a == c or b == d) or (a > c and b > d and a - c == b - d) or (c > a and d > b and c - a == d - b) or (
         a > c and d > b and a - c == d - b) or (c > a and b > d and c - a == b - d)))  # ферзь
@@ -84,3 +85,4 @@ if (
 #     print("YES")
 # else:
 #     print("NO")
+
