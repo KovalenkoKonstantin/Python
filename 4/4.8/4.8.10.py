@@ -86,3 +86,21 @@ if (
 # else:
 #     print("NO")
 
+x1, y1 = int(input()), int(input())
+x2, y2 = int(input()), int(input())
+
+s = input() # тип фигуры
+
+if s == 'конь':
+    flag = abs(x1 - x2) == 2 and abs(y1 - y2) == 1 or abs(x1 - x2) == 1 and abs(y1 - y2) == 2
+elif s == 'ладья':
+    flag = x1 == x2 or y1 == y2
+elif s == 'слон':
+    flag = abs(x1 - x2) == abs(y1 - y2)
+elif s == 'ферзь':
+    flag = abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2
+else: # пешка
+    flag = x2 - x1 == 1 and abs(y1 - y2) == 1
+
+if flag:
+    print('Шах!')
