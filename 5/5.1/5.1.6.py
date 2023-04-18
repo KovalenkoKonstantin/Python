@@ -4,3 +4,12 @@
 # Если положительных чисел нет, то нужно вывести 0
 # На первой строчке вводится целое число n
 # На следующих n строчках вводится по целому числу
+x = 0
+for i in range (int(input())):
+    y = int(input())
+    if y > 0:
+        x += y
+print(x)
+
+print(sum(a if (a := int(input())) > 0
+          else 0 for i in range(int(input()))))
