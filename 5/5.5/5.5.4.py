@@ -10,4 +10,13 @@
 #
 # Нужно вывести количество предметов,
 # которые Сакура положит в рюкзак. 
+sum = 0
+count = 0
+m = int(input())
 
+while sum < m:
+    n = int(input())
+    sum += n
+    if sum <= m:
+        count += 1
+print(count)
