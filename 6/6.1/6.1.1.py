@@ -6,3 +6,13 @@
 # второму - индекс 1 и так далее.
 string = "Hello world"
 print(string[1])
+
+s = "23456"
+print(s[1])
+
+s = "Hello world"
+print((s[0] + s[4] + s[5]) * 3)
+
+s = "23456"
+print(int(s[3] + s[1]) * 2)
+
