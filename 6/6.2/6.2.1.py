@@ -32,3 +32,12 @@ print(s[2:])
 
 s = "abcdefg"
 print(s[-3:])
+
+s = "Какой-нибудь текст"
+print(s[-5:])
+
+s = "текст"
+print(s[1:-1])
+
+s = "abracadabra"
+print(s[:])
