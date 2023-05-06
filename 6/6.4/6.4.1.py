@@ -1,0 +1,1 @@
+print("aAa".upper())
