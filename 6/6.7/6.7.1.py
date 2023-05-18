@@ -18,3 +18,13 @@ print(s.isupper())
 # Пробельными символами считаются перенос строки, символ табуляции, пробел, вертикальная табуляция
 s = "\n\n\t  "
 print(s.isspace())
+# isdigit() - возвращает True, если строка состоит только из цифр, и False иначе
+# Минус, точка, нижнее подчеркивание не являются цифрами
+s = "12345"
+print(s.isdigit())  # True
+print("1.0".isdigit(), "-39".isdigit(), "1_000".isdigit())  # False False False
+# isalnum() - возвращает True, если строка состоит только из букв и цифр, и False иначе
+s = 'Miku39'
+print(s.isalnum())  # True
+print(s.isdigit() or s.isalpha())  # False
+# Все методы, возвращают False, если применить их к пустой строке.
