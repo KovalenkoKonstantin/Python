@@ -9,4 +9,3 @@ for i in range(n):
     s = input()
     if s.islower():
         print(s)
-
