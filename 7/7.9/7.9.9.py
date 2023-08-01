@@ -21,3 +21,7 @@ for i in range(n):
     k.append(s[int(input())-1])
 for i in k:
     print(i)
+
+l = sorted([int(i) for i in input().split()], reverse=True)
+for _ in range(int(input())):
+    print(l[int(input()) - 1])
